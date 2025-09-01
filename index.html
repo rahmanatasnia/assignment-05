@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service Hotline</title>
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+
 </head>
 <body>
-    
+     <nav>
+      <div
+        class="nav-container flex flex-col md:flex-row justify-between items-center mx-auto px-5 py-3"
+      >
+        <div class="flex items-center justify-center gap-2.5">
+          <img class="size-12 md:size-15" src="./assets/logo.png" alt="" />
+          <p class="text-[#006747] text-xl md:text-2xl font-extrabold hind">
+            Emergency <br />
+            Service
+          </p>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 mt-3">
+          <div
+            class="flex items-center justify-center gap-2 bg-[#41FF6B]/10 px-5 py-2 rounded-[50px]"
+          >
+            <p id="heart-count" class="font-bold">0</p>
+            <img class="size-6" src="./assets/heart.png" alt="" />
+          </div>
+          <div
+            class="flex items-center justify-center gap-2 bg-[#41FF6B]/10 px-5 py-2 rounded-[50px]"
+          >
+            <p id="coin-count" class="font-bold">100</p>
+            <img class="size-6" src="./assets/coin.png" alt="" />
+          </div>
+          <div
+            class="flex items-center justify-center gap-2 bg-[#00A63E] text-white px-5 py-2 rounded-[50px]"
+          >
+            <p class="font-medium"><span id="copy-count">0</span> Copy</p>
+          </div>
+        </div>
+      </div>
+    </nav>
 </body>
 </html>
