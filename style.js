@@ -70,7 +70,7 @@ function call(e) {
 
   if (20 > coinCounted) {
     alert(
-      "❌ You do not have sufficiant balance. you need minimum 20 coin for each call"
+      "❌ You do not have sufficient balance. you need minimum 20 coin for each call"
     );
     return;
   }
@@ -87,12 +87,12 @@ callBtn.forEach((item) => {
 });
 
 
-function increseHeart() {
+function increaseHeart() {
   let heartCount = document.getElementById("heart-count");
   heartCounted++;
   heartCount.innerText = heartCounted;
 }
 
 heart.forEach((item) => {
-  item.addEventListener("click", increseHeart);
+  item.addEventListener("click", increaseHeart);
 });
